@@ -4,6 +4,8 @@
 function cab_load_styles() {
 	wp_register_style('main', get_template_directory_uri() . '/css/main.css');
 	wp_enqueue_style('main');
+	wp_register_style('open-sans-condensed', 'http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700');
+	wp_enqueue_style('open-sans-condensed');
 }
 
 add_action('wp_enqueue_scripts', 'cab_load_styles' );
