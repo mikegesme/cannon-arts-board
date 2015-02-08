@@ -6,4 +6,6 @@
 
 <?php endwhile; endif; ?>
 
+<?php dynamic_sidebar('home-middle'); ?>
+
 <?php get_footer(); ?>
