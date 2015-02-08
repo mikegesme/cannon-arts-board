@@ -7,3 +7,5 @@ function mgw_load_styles() {
 }
 
 add_action('wp_enqueue_scripts', 'mgw_load_styles' );
+
+register_sidebar('events-sidebar');
