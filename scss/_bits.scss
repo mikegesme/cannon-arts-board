@@ -1,8 +1,21 @@
+/*
+ * Breakpoints
+ */
+@mixin breakpoint($point) {
+  @if $point == large {
+    @media (min-width: 70rem) { @content ; }
+  }
+  @else if $point == medium {
+    @media (min-width: 55rem) { @content ; }
+  }
+  @else if $point == small {
+    @media (min-width: 40rem) { @content ; }
+  }
+}
 
-
-
-
-
+/*
+ * Other Mixins
+ */
 
 // Rem mix-in for IE8
 @mixin rem($property, $values) {

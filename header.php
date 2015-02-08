@@ -11,19 +11,20 @@
 	<script src="<?php bloginfo('template_url'); ?>/js/picturefill.js" async></script>
 	<?php wp_head(); ?>
 </head>
-<header>
-	<div class="banner">
-		<picture>
-			<!--[if IE 9]><video style="display: none;"><![endif]-->
-			<source srcset="<?php bloginfo('template_url'); ?>/images/logo-2000.jpg" media="(min-width: 700px)">
-			<!--[if IE 9]></video><![endif]-->
-			<!--[if lt IE 9]>
-			<img src="<?php bloginfo('template_url'); ?>/images/logo-2000.jpg" alt="Cannon Arts Board">
-			<![endif]-->
-			<!--[if !lt IE 9]><!-->
-			<img srcset="<?php bloginfo('template_url'); ?>/images/logo-1400.jpg" alt="Cannon Arts Board">
-			<!-- <![endif]-->
-		</picture>
-	</div>
-</header>
 <body>
+<div class="page-wrap fullwidth">
+	<header>
+		<div class="banner">
+			<picture>
+				<!--[if IE 9]><video style="display: none;"><![endif]-->
+				<source srcset="<?php bloginfo('template_url'); ?>/images/logo-2000.jpg" media="(min-width: 40rem)">
+				<!--[if IE 9]></video><![endif]-->
+				<!--[if lt IE 9]>
+				<img src="<?php bloginfo('template_url'); ?>/images/logo-2000.jpg" alt="Cannon Arts Board">
+				<![endif]-->
+				<!--[if !lt IE 9]><!-->
+				<img srcset="<?php bloginfo('template_url'); ?>/images/logo-1400.jpg" alt="Cannon Arts Board">
+				<!-- <![endif]-->
+			</picture>
+		</div>
+	</header>
