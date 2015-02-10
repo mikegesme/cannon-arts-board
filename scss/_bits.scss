@@ -1,4 +1,22 @@
 /*
+ * Colors
+ */
+
+$lightgray: #999999;
+$darkgray: #333333;
+$red: #ff6633;
+$blue: #66cccc;
+$lightblue: #cdfffe;
+$darkyellow: #ffcc99;
+$yellow: #ffcc33;
+
+/*
+ * Font Weights
+ */
+$normal: 400;
+$bold: 700;
+
+/*
  * Breakpoints
  */
 @mixin breakpoint($point) {
