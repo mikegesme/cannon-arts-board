@@ -14,6 +14,13 @@
 <body>
 <div class="page-wrap fullwidth">
 	<header>
+		<?php wp_nav_menu(
+			array(
+				'menu' 				=> 'Top Nav',
+				'menu_class' 	=> 'top-nav',
+			)
+		); 
+		?>
 		<div class="banner">
 			<picture>
 				<!--[if IE 9]><video style="display: none;"><![endif]-->

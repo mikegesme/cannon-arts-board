@@ -1,9 +1,14 @@
+@import "reset";
 @import "bits";
 @import "header";
 @import "typography";
 
 img {
 	max-width: 100%;
+}
+
+a {
+	text-decoration: none;
 }
 
 .fullwidth {
