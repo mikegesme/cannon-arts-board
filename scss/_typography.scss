@@ -2,6 +2,12 @@ body {
 	font-family: sans-serif;
 }
 
+.top-nav a {
+	text-transform: uppercase;
+	font-weight: $bold;
+	@include rem(font-size, 0.8);
+}
+
 .event-weekday {
 	font-weight: $bold;
 	@include rem(font-size, 1);
