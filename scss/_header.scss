@@ -14,6 +14,7 @@
 
 .top-nav li a {
 	color: $darkgray;
+	transition: color 0.2s ease;
 }
 
 .top-nav li a:hover {
@@ -42,6 +43,7 @@
 	display: block;
 	@include rem(padding, 1);
 	color: white;
+	transition: background 0.2s ease;
 }
 
 .main-nav a:hover {
