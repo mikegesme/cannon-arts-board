@@ -13,6 +13,15 @@ add_action('wp_enqueue_scripts', 'cab_load_styles' );
 // Register sidebars
 function cab_widgets_init() {
 register_sidebar( array(
+    'id'          => 'primary',
+    'name'        => __( 'Primary Sidebar'),
+    'description' => __( 'This is the primary sidebar.'),
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget' => '</div>',
+		'before_title' => '<h3>',
+		'after_title' => '</h3>'    
+) );
+register_sidebar( array(
     'id'          => 'home-middle',
     'name'        => __( 'Home Middle'),
     'description' => __( 'This is the home page middle area.'),

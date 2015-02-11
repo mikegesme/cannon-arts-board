@@ -3,6 +3,7 @@
 @import "header";
 @import "typography";
 @import "events";
+@import "sidebar";
 
 img {
 	max-width: 100%;
@@ -28,10 +29,19 @@ body {
 	margin-right: auto;
 }
 
+.one-third {
+	width: 100%;
+	@include breakpoint(small) {
+		width: 33%;
+		float: left;
+	}
+}
+
 .two-thirds {
 	width: 100%;
 	@include breakpoint(small) {
-		width: 62.5%;
+		float: left;
+		width: 67%;
 	}
 }
 

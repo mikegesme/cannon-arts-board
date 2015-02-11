@@ -16,4 +16,8 @@
 
 </div>
 
+<div class="one-third">
+	<?php dynamic_sidebar('primary'); ?>
+</div>
+
 <?php get_footer(); ?>
