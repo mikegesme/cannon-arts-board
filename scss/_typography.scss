@@ -8,6 +8,11 @@ body {
 	@include rem(font-size, 0.8);
 }
 
+.main-nav a {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
 .event-weekday {
 	font-weight: $bold;
 	@include rem(font-size, 1);

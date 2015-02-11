@@ -34,4 +34,12 @@
 				<!-- <![endif]-->
 			</picture>
 		</div>
+		<nav class="main-nav clearfix">
+			<?php wp_nav_menu(
+				array(
+					'menu'			=> 'Main Nav',
+				)
+			);
+			?>
+		</nav>
 	</header>

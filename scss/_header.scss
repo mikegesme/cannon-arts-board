@@ -16,11 +16,34 @@
 	color: $darkgray;
 }
 
+.top-nav li a:hover {
+	color: $red;
+}
+
 .banner {
-	@include rem(margin, 1 0);
+	@include rem(margin-top, 1);
 }
 
 .banner svg {
 	min-width: 100%;
 	height: auto;
+}
+
+.main-nav {
+	background: $darkgray;
+}
+
+.main-nav li {
+	float: left;
+	border-right: 1px solid $lightgray;
+}
+
+.main-nav a {
+	display: block;
+	@include rem(padding, 1);
+	color: white;
+}
+
+.main-nav a:hover {
+	background: $red;
 }
