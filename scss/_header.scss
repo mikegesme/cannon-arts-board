@@ -46,6 +46,6 @@
 	transition: background 0.2s ease;
 }
 
-.main-nav a:hover {
+.main-nav a:hover, .main-nav .current-menu-item a {
 	background: $red;
 }

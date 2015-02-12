@@ -1,14 +1,19 @@
 .em-search-wrapper {
-	display: none;
+//	display: none;
 }
 
 .events-table th {
 	text-align: left;
+	width: auto;
 }
 
 .events-table td {
 	vertical-align: top;
 	width: auto;
+}
+
+table {
+	cellspacing: 0;
 }
 
 .events-table tr {
@@ -18,11 +23,14 @@
 .event-date {
 	background-color: $blue;
 	color: white;
-	@include rem(width, 5);
+	@include rem(width, 4);
 	@include rem(padding, 0.5 0);
 	@include rem(margin, 0.25 0);
 	text-align: center;
 	border: 3px solid $lightblue;
+	@include breakpoint(small) {
+		@include rem(width, 5);		
+	}
 }
 
 .events-table img {
@@ -30,6 +38,7 @@
 	@include rem(margin-right, 1);
 }
 
-.event-details {
-	@include rem(padding, 0.5 0);
+.events-table .event-details {
+	width: 100%;
+	@include rem(padding, 0.5 0 0.5 0.5);
 }
