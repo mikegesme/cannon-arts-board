@@ -42,3 +42,12 @@ table {
 	width: 100%;
 	@include rem(padding, 0.5 0 0.5 0.5);
 }
+
+.event-details img {
+	@include rem(max-width, 3);
+	@include rem(max-height, 3);
+	@include breakpoint(small) {
+		@include rem(max-width, 4);
+		@include rem(max-height, 4);
+	}
+}

@@ -40,5 +40,8 @@ body {
 }
 
 .event-details {
-	@include rem(line-height, 1.5);
+	@include rem(line-height, 1.2);
+	@include breakpoint(small) {
+		@include rem(line-height, 1.5);
+	}
 }
