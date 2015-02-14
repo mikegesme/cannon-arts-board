@@ -1,5 +1,9 @@
 .em-search-wrapper {
-//	display: none;
+	display: none;
+}
+
+.em-search-wrapper .em-search-submit {
+	background: $blue !important;
 }
 
 .events-table th {

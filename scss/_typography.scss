@@ -23,6 +23,23 @@ body {
 	}
 }
 
+h1 {
+	@include rem(font-size, 1.2);
+	@include rem(line-height, 1.5);
+	font-weight: $bold;
+	@include breakpoint(small) {
+		@include rem(font-size, 1.5);
+	}
+	@include breakpoint(medium) {
+		@include rem(font-size, 2);
+		@include rem(line-height, 2);
+	}
+}
+
+article p {
+	@include rem(line-height, 1.4);
+}
+
 .events-table thead {
 	font-weight: $bold;
 	@include rem(line-height, 1.5);

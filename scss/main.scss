@@ -3,6 +3,7 @@
 @import "header";
 @import "typography";
 @import "events";
+@import "article";
 @import "sidebar";
 @import "footer";
 
@@ -23,8 +24,12 @@ body {
 	color: $darkgray;
 }
 
+.main-content {
+	@include rem(padding-top, 1);
+}
+
 .fullwidth {
-	@include rem(max-width, 75);
+	@include rem(max-width, 79);
 	@include rem(padding, 0 1);
 	margin-left: auto;
 	margin-right: auto;
