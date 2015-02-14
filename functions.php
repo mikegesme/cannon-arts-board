@@ -6,6 +6,9 @@ function cab_load_styles() {
 	wp_enqueue_style('main');
 	wp_register_style('open-sans-condensed', 'http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700');
 	wp_enqueue_style('open-sans-condensed');
+	wp_enqueue_script('jquery');
+	wp_register_script('main-js', get_template_directory_uri() . '/js/main.js', array('jquery'));
+	wp_enqueue_script('main-js');
 }
 
 add_action('wp_enqueue_scripts', 'cab_load_styles' );

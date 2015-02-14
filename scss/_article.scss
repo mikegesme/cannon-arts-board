@@ -8,3 +8,11 @@
 article p {
 	@include rem(padding, 0 0 1 0);
 }
+
+.article-button {
+	display: inline-block;
+	background: $blue;
+	color: white;
+	@include rem(padding, 0.1 0.5);
+	@include rem(margin, 0.5 0.5 0 0);
+}

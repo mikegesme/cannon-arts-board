@@ -36,8 +36,26 @@ h1 {
 	}
 }
 
+.events-heading {
+	@include rem(font-size, 1);
+	@include rem(line-height, 1.5);
+	font-weight: $bold;
+	@include breakpoint(small) {
+		@include rem(font-size, 1.2);
+	}
+	@include breakpoint(medium) {
+		@include rem(font-size, 1.5);
+		@include rem(line-height, 1.5);
+	}
+}
+
 article p {
 	@include rem(line-height, 1.4);
+}
+
+.article-button {
+	text-transform: uppercase;
+	@include rem(font-size, 1);
 }
 
 .events-table thead {

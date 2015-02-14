@@ -1,5 +1,11 @@
 .em-search-wrapper {
 	display: none;
+	@include rem(max-width, 35);
+	
+}
+
+.em-search-wrapper .em-search-main .em-search-field {
+	padding-left: 0;
 }
 
 .em-search-wrapper .em-search-submit {
