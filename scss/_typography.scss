@@ -15,8 +15,12 @@ body {
 }
 
 .main-nav a {
+	@include rem(font-size, 0.8);
 	text-transform: uppercase;
 	font-weight: bold;
+	@include breakpoint(small) {
+		@include rem(font-size, 1);
+	}
 }
 
 .event-weekday {
