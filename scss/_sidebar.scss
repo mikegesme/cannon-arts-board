@@ -1,0 +1,46 @@
+.sidebar {
+	@include breakpoint(small) {
+		@include rem(padding-left, 1);
+	}
+}
+
+.sidebar h3 {
+	@include rem(padding, 1 0);
+}
+
+.em-calnav {
+	color: $darkgray;
+}
+
+.em-calendar {
+	width: 100%;
+	border-bottom: 1px solid $verylightgray;
+}
+
+.em-calendar tr td.eventful a {
+		color: $blue;
+}
+
+.em-calendar tr td.eventful-today {
+	a, a:visited {
+		color: $darkgray;
+	}
+}
+
+.em-calendar td {
+	border-top: 1px solid $verylightgray;
+}
+
+.em-calendar {
+	line-height: 1.6;
+}
+
+// Facebook Plugin
+
+.fb-like-box {
+	@include rem(padding, 2 0);
+}
+
+.fb-like-box, .fb-like-box > span, .fb-like-box iframe {
+	width: 100% !important;
+}

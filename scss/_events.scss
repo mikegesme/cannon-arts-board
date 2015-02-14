@@ -20,6 +20,13 @@ table {
 	border-bottom: 1px solid $verylightgray;
 }
 
+.events-table .event-description {
+	@include rem (padding-left, 0.5);
+	@include breakpoint(small) {
+		@include rem(padding-left, 2);		
+	}
+}
+
 .event-date {
 	background-color: $blue;
 	color: white;
@@ -41,13 +48,17 @@ table {
 .events-table .event-details {
 	width: 100%;
 	@include rem(padding, 0.5 0 0.5 0.5);
+	@include breakpoint(small) {
+		@include rem(padding, 0.5 0 0.5 2);		
+	}
 }
 
 .event-details img {
-	@include rem(max-width, 3);
-	@include rem(max-height, 3);
+	border: 3px solid $lightgray;
+	@include rem(max-width, 4);
+	@include rem(max-height, 4);
 	@include breakpoint(small) {
-		@include rem(max-width, 4);
-		@include rem(max-height, 4);
+		@include rem(max-width, 6);
+		@include rem(max-height, 6);
 	}
 }

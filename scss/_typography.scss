@@ -8,7 +8,7 @@ body {
 	font-family: 'Open Sans', sans-serif;
 }
 
-.top-nav a {
+.top-nav a, {
 	text-transform: uppercase;
 	font-weight: $bold;
 	@include rem(font-size, 0.8);
@@ -21,6 +21,11 @@ body {
 	@include breakpoint(small) {
 		@include rem(font-size, 1);
 	}
+}
+
+.events-table thead {
+	font-weight: $bold;
+	@include rem(line-height, 1.5);
 }
 
 .event-weekday {
@@ -48,4 +53,23 @@ body {
 	@include breakpoint(small) {
 		@include rem(line-height, 1.5);
 	}
+}
+
+.sidebar h3 {
+	text-transform: uppercase;
+	font-weight: $bold;
+	@include rem(font-size, 0.8);
+	@include breakpoint(small) {
+		@include rem(font-size, 1);
+	}
+}
+
+/* Sidebar Calendar */
+
+.em-calendar .month_name {
+	@include rem(font-size, 1);
+}
+
+.em-calendar tbody {
+	@include rem(font-size, 1);
 }
