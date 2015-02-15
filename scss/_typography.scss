@@ -49,6 +49,11 @@ h1 {
 	}
 }
 
+article h3 {
+	font-weight: $bold;
+	@include rem(font-size, 1);
+}
+
 article p {
 	@include rem(line-height, 1.4);
 }

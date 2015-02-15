@@ -1,11 +1,21 @@
 <?php get_header(); ?>
 
-<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+<div class="main-content clearfix">
+<article class="fullwidth">
 
-<?php the_content(); ?>
+	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-<?php endwhile; endif; ?>
+	<header class="entry-header">
+		<h1 class="entry-title"><?php the_title(); ?></h1>
+	</header>
 
-<?php dynamic_sidebar('home-middle'); ?>
+	<?php the_content(); ?>
+
+	<?php endwhile; endif; ?>
+
+	<?php dynamic_sidebar('home-middle'); ?>
+
+</article>
+</div>
 
 <?php get_footer(); ?>
