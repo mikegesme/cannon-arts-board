@@ -64,7 +64,8 @@ table {
 }
 
 .event-details img {
-	border: 3px solid $lightgray;
+	border: 3px solid $verylightgray;
+	overflow: none;
 	@include rem(max-width, 4);
 	@include rem(max-height, 4);
 	@include breakpoint(small) {
