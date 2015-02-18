@@ -1,11 +1,11 @@
 .site-footer-wrapper {
-	height: 20rem;
 	background-color: $darkgray;
+	position: relative;
 }
 
 .site-copyright {
 	text-align: center;
-	color: $lightgray;
+	color: $verylightgray;
 	@include rem(padding, 0.5 0);
 	@include rem(font-size, 0.8);
 }
