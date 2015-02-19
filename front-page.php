@@ -9,9 +9,14 @@
 		<h1 class="entry-title"><?php the_title(); ?></h1>
 	</header>
 
+
 	<?php the_content(); ?>
 
 	<?php endwhile; endif; ?>
+
+	<p class="all-events-link mobile-link">
+		<a href="/events" title="View All Upcoming Events">Events Calendar</a>
+	</p>
 
 	<?php dynamic_sidebar('home-middle'); ?>
 

@@ -9,10 +9,14 @@ article p {
 	@include rem(padding, 0 0 1 0);
 }
 
-.article-button {
+.article-button, .all-events-link a {
 	display: inline-block;
 	background: $blue;
 	color: white;
 	@include rem(padding, 0.1 0.5);
 	@include rem(margin, 0.5 0.5 0 0);
+}
+
+.all-events-link a {
+	@include rem(padding, 0.5 0.5);
 }

@@ -28,9 +28,9 @@ register_sidebar( array(
     'id'          => 'home-middle',
     'name'        => __( 'Home Middle'),
     'description' => __( 'This is the home page middle area.'),
-		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'before_widget' => '<div id="%1$s" class="widget %2$s home-events-widget">',
 		'after_widget' => '</div>',
-		'before_title' => '<h3>',
+		'before_title' => '<h3 class="home-events-title">',
 		'after_title' => '</h3>'    
 ) );
 }

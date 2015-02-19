@@ -1,3 +1,14 @@
+// Home Events
+.home-events-widget li {
+	border-top: 1px solid $verylightgray;
+	@include rem(padding, 1 0);
+}
+
+.home-events-widget h3 {
+	@include rem(padding-bottom, 1);
+}
+
+// Events Page
 .em-search-wrapper {
 	display: none;
 	@include rem(max-width, 35);

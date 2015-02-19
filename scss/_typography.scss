@@ -58,7 +58,8 @@ article p {
 	@include rem(line-height, 1.4);
 }
 
-.article-button {
+.article-button, .all-events-link a {
+	color: white;
 	text-transform: uppercase;
 	@include rem(font-size, 1);
 }
@@ -95,13 +96,17 @@ article p {
 	}
 }
 
-.sidebar h3 {
+.sidebar h3, .home-events-title {
 	text-transform: uppercase;
 	font-weight: $bold;
 	@include rem(font-size, 0.8);
 	@include breakpoint(small) {
 		@include rem(font-size, 1);
 	}
+}
+
+.home-events-widget ul {
+	font-weight: $bold;
 }
 
 /* Sidebar Calendar */
