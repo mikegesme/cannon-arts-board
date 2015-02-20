@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <div class="main-content clearfix">
-<article class="fullwidth">
+<article>
 
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
