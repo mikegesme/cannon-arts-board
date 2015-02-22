@@ -1,4 +1,11 @@
 // Home Events
+
+.all-events-link {
+	@include breakpoint(small) {
+		display: none;
+	}
+}
+
 .home-events-widget li {
 	border-top: 1px solid $verylightgray;
 	@include rem(padding, 1 0);
@@ -83,4 +90,9 @@ table {
 		@include rem(max-width, 6);
 		@include rem(max-height, 6);
 	}
+}
+
+// Single Event Page
+.single-event-img {
+	max-width: 50%;
 }

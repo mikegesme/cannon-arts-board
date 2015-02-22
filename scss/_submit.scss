@@ -1,3 +1,14 @@
 .wp-editor-container {
 	border: 1px solid $lightgray;
 }
+
+#event-form h3 {
+	@include rem(margin-bottom, 1);
+}
+
+#event-form input[type="text"] {
+}
+
+#event-form {
+	@include rem(line-height, 1.5);
+}
