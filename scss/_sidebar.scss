@@ -1,6 +1,7 @@
 .sidebar {
 	@include breakpoint(small) {
-		@include rem(padding-left, 1);
+//		@include rem(padding-left, 1);
+		@include rem(padding-left, 4);
 	}
 }
 
