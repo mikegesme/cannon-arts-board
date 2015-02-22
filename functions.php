@@ -33,6 +33,15 @@ register_sidebar( array(
 		'before_title' => '<h3 class="home-events-title">',
 		'after_title' => '</h3>'    
 ) );
+register_sidebar( array(
+    'id'          => 'footer-area',
+    'name'        => __( 'Footer Area'),
+    'description' => __( 'This is the footer area.'),
+		'before_widget' => '<div id="%1$s" class="widget %2$s footer-widget">',
+		'after_widget' => '</div>',
+		'before_title' => '<h3 class="footer-title">',
+		'after_title' => '</h3>'    
+) );
 }
 
 add_action( 'widgets_init', 'cab_widgets_init');

@@ -62,7 +62,7 @@ h2 {
 	}
 }
 
-article h3 {
+h3 {
 	font-weight: $bold;
 	@include rem(font-size, 1);
 }
@@ -130,4 +130,13 @@ article p {
 
 .em-calendar tbody {
 	@include rem(font-size, 1);
+}
+
+/* Site Footer */
+.site-footer {
+	@include rem(font-size, 0.8);
+}
+
+.site-footer a {
+	font-weight: $bold;
 }

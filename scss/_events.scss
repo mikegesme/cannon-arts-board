@@ -1,6 +1,6 @@
 // Home Events
 
-.all-events-link {
+.mobile-link {
 	@include breakpoint(small) {
 		display: none;
 	}

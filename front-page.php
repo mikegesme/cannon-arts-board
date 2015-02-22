@@ -20,6 +20,11 @@
 
 	<?php dynamic_sidebar('home-middle'); ?>
 
+	<div class="social-stream">
+		<h3>Around Cannon Falls</h3>
+		<?php echo do_shortcode('[dc_social_wall id="56"]'); ?>
+	</div>
+
 </article>
 </div>
 
