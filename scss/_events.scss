@@ -96,3 +96,9 @@ table {
 .single-event-img {
 	max-width: 50%;
 }
+
+// Locations
+.em-locations-list li {
+	@include rem(padding-bottom, 0.5);
+	@include rem(line-height, 1.5);
+}
