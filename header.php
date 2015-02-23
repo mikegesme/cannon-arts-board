@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width">
-	<title><?php the_title(); ?></title>
+	<title><?php wp_title(); ?></title>
 	<script>
 	// Picture element HTML5 shiv
 	document.createElement( "picture" );
